@@ -68,7 +68,7 @@
             this.btnNuevoGlobal.TabIndex = 5;
             this.btnNuevoGlobal.Text = "Aceptar";
             this.btnNuevoGlobal.UseVisualStyleBackColor = false;
-            this.btnNuevoGlobal.Click += new System.EventHandler(this.btnNuevoGlobal_Click);
+            this.btnNuevoGlobal.Click += new System.EventHandler(this.BtnNuevoGlobal_Click);
             // 
             // btnCancelar
             // 

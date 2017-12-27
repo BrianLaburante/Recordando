@@ -29,27 +29,27 @@ namespace AplicacionParaOrganizarme
             get { return agregado; }
             set { agregado = value; }
         }
-        private void seleccionarGlobal()
+        private void SeleccionarGlobal()
         {
             if (!string.IsNullOrWhiteSpace(tbNombreGlobal.Text))
             {
                 principal.Global = this.tbNombreGlobal.Text;
+                tbNombreGlobal.Text = string.Empty;
             }
             else
             {
                 MessageBox.Show("debe ingresar un nombre valido");
             }
         }
-
         //eventos de los controles y los formularios
         private void NuevoGlobal_Load(object sender, EventArgs e)
         {
            
         }
 
-        private void btnNuevoGlobal_Click(object sender, EventArgs e)
+        private void BtnNuevoGlobal_Click(object sender, EventArgs e)
         {
-            this.seleccionarGlobal();
+            this.SeleccionarGlobal();
             this.Close();
         }
     }

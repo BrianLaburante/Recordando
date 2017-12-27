@@ -40,13 +40,11 @@ namespace AplicacionParaOrganizarme
             get { return paso; }
             set { paso = value; }
         }
-
         public string Global
         {
             get { return global; }
             set { global = value; }
         }
-
         private void ActualizarListaGlobal(TipoDeCambio accion)
         {
             switch (accion)
@@ -71,11 +69,11 @@ namespace AplicacionParaOrganizarme
                 default : throw new Exception("no se creo unas acciones para este Tipo de Cambio"); 
             }
         }
-
         private void CargarLbGlobal(List<string> Objetos)
         {
             if (HuboCambio)
             {
+                lbGlobal.Items.Clear();
                 foreach (string temp in Objetos)
                 {
                     lbGlobal.Items.Add(temp);
@@ -84,7 +82,7 @@ namespace AplicacionParaOrganizarme
         }
         // eventos de los controles y formularios
 
-        private void frmPrincipal_Load(object sender, EventArgs e)
+        private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             this.Global = string.Empty;
             this.Paso = string.Empty;
@@ -93,14 +91,12 @@ namespace AplicacionParaOrganizarme
             formularioGlobal = new NuevoGlobal(this);
             FormularioLocal = new NuevoLocal(Paso);
         }
-
-        private void btnNuevoGlobal_Click(object sender, EventArgs e)
+        private void BtnNuevoGlobal_Click(object sender, EventArgs e)
         {
             formularioGlobal.ShowDialog();
             this.ActualizarListaGlobal(TipoDeCambio.insertar);
         }
-
-        private void lbGlobal_SelectedIndexChanged(object sender, EventArgs e)
+        private void LbGlobal_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

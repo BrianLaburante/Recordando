@@ -84,7 +84,7 @@
             this.lbGlobal.Name = "lbGlobal";
             this.lbGlobal.Size = new System.Drawing.Size(580, 277);
             this.lbGlobal.TabIndex = 3;
-            this.lbGlobal.SelectedIndexChanged += new System.EventHandler(this.lbGlobal_SelectedIndexChanged);
+            this.lbGlobal.SelectedIndexChanged += new System.EventHandler(this.LbGlobal_SelectedIndexChanged);
             // 
             // btnNuevoGlobal
             // 
@@ -99,7 +99,7 @@
             this.btnNuevoGlobal.TabIndex = 4;
             this.btnNuevoGlobal.Text = "Nueva tarea";
             this.btnNuevoGlobal.UseVisualStyleBackColor = false;
-            this.btnNuevoGlobal.Click += new System.EventHandler(this.btnNuevoGlobal_Click);
+            this.btnNuevoGlobal.Click += new System.EventHandler(this.BtnNuevoGlobal_Click);
             // 
             // btnFinalizarGlobal
             // 
@@ -199,7 +199,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmPrincipal";
             this.Text = "Para llevar al dia las tareas";
-            this.Load += new System.EventHandler(this.frmPrincipal_Load);
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
