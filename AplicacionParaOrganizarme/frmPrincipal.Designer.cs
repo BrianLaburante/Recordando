@@ -57,7 +57,7 @@
             this.btnAgregarPaso.BackColor = System.Drawing.Color.DarkRed;
             this.btnAgregarPaso.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnAgregarPaso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarPaso.Font = new System.Drawing.Font("Replica Pro Bold Italic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPaso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarPaso.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarPaso.Location = new System.Drawing.Point(886, 528);
             this.btnAgregarPaso.Name = "btnAgregarPaso";
@@ -65,6 +65,7 @@
             this.btnAgregarPaso.TabIndex = 1;
             this.btnAgregarPaso.Text = "Agregar Checkbox";
             this.btnAgregarPaso.UseVisualStyleBackColor = false;
+            this.btnAgregarPaso.Click += new System.EventHandler(this.BtnAgregarPaso_Click);
             // 
             // clbPasos
             // 
@@ -76,13 +77,13 @@
             // 
             // lbGlobal
             // 
-            this.lbGlobal.Font = new System.Drawing.Font("Replica Pro Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGlobal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGlobal.FormattingEnabled = true;
             this.lbGlobal.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.lbGlobal.ItemHeight = 21;
+            this.lbGlobal.ItemHeight = 24;
             this.lbGlobal.Location = new System.Drawing.Point(12, 56);
             this.lbGlobal.Name = "lbGlobal";
-            this.lbGlobal.Size = new System.Drawing.Size(580, 277);
+            this.lbGlobal.Size = new System.Drawing.Size(580, 268);
             this.lbGlobal.TabIndex = 3;
             this.lbGlobal.SelectedIndexChanged += new System.EventHandler(this.LbGlobal_SelectedIndexChanged);
             // 
@@ -91,7 +92,7 @@
             this.btnNuevoGlobal.BackColor = System.Drawing.Color.DarkRed;
             this.btnNuevoGlobal.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnNuevoGlobal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoGlobal.Font = new System.Drawing.Font("Replica Pro Bold Italic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoGlobal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoGlobal.ForeColor = System.Drawing.Color.Black;
             this.btnNuevoGlobal.Location = new System.Drawing.Point(12, 352);
             this.btnNuevoGlobal.Name = "btnNuevoGlobal";
@@ -106,7 +107,7 @@
             this.btnFinalizarGlobal.BackColor = System.Drawing.Color.DarkRed;
             this.btnFinalizarGlobal.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnFinalizarGlobal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinalizarGlobal.Font = new System.Drawing.Font("Replica Pro Bold Italic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizarGlobal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinalizarGlobal.ForeColor = System.Drawing.Color.Black;
             this.btnFinalizarGlobal.Location = new System.Drawing.Point(12, 408);
             this.btnFinalizarGlobal.Name = "btnFinalizarGlobal";
@@ -120,7 +121,7 @@
             this.btnPrioridad.BackColor = System.Drawing.Color.DarkRed;
             this.btnPrioridad.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnPrioridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrioridad.Font = new System.Drawing.Font("Replica Pro Bold Italic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrioridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrioridad.ForeColor = System.Drawing.Color.Black;
             this.btnPrioridad.Location = new System.Drawing.Point(12, 464);
             this.btnPrioridad.Name = "btnPrioridad";
@@ -156,7 +157,7 @@
             this.BtnEliminarPaso.BackColor = System.Drawing.Color.DarkRed;
             this.BtnEliminarPaso.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.BtnEliminarPaso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminarPaso.Font = new System.Drawing.Font("Replica Pro Bold Italic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminarPaso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminarPaso.ForeColor = System.Drawing.Color.Black;
             this.BtnEliminarPaso.Location = new System.Drawing.Point(598, 525);
             this.BtnEliminarPaso.Name = "BtnEliminarPaso";
@@ -170,7 +171,7 @@
             this.btnEditarPaso.BackColor = System.Drawing.Color.DarkRed;
             this.btnEditarPaso.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnEditarPaso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarPaso.Font = new System.Drawing.Font("Replica Pro Bold Italic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarPaso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarPaso.ForeColor = System.Drawing.Color.Black;
             this.btnEditarPaso.Location = new System.Drawing.Point(751, 528);
             this.btnEditarPaso.Name = "btnEditarPaso";

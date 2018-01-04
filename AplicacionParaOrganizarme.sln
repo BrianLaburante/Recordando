@@ -1,15 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplicacionParaOrganizarme", "AplicacionParaOrganizarme\AplicacionParaOrganizarme.csproj", "{27ECB9C3-ECF4-4540-832C-8F1AC4797F77}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Formularios", "Formularios", "{D5BDF745-5C9B-4D60-9E57-2505F8A8DCCC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "interfaz de comunicacion", "interfaz de comunicacion", "{B3986CAD-9BCB-4A88-9EEB-AE6A54A1139D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clases", "clases", "{B3986CAD-9BCB-4A88-9EEB-AE6A54A1139D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria de Clases", "Libreria de Clases\Libreria de Clases.csproj", "{63F6C7F3-8B28-4A86-94EF-1F639E68C2DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logica", "Logica", "{342937A4-BF2A-40F5-8BF0-4DE1E9A3EB39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatosLocales", "DatosLocales", "{2485D92F-C2A7-4174-B4A2-C6EEBFA4E138}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,5 +36,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{27ECB9C3-ECF4-4540-832C-8F1AC4797F77} = {D5BDF745-5C9B-4D60-9E57-2505F8A8DCCC}
 		{63F6C7F3-8B28-4A86-94EF-1F639E68C2DC} = {B3986CAD-9BCB-4A88-9EEB-AE6A54A1139D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0E138BC-123F-4B82-BE13-55108A2849AD}
 	EndGlobalSection
 EndGlobal

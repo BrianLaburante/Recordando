@@ -50,28 +50,28 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevoGlobal.cs">
+    <Compile Include="frmNuevoGlobal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevoGlobal.Designer.cs">
-      <DependentUpon>NuevoGlobal.cs</DependentUpon>
+    <Compile Include="frmNuevoGlobal.Designer.cs">
+      <DependentUpon>frmNuevoGlobal.cs</DependentUpon>
     </Compile>
-    <Compile Include="NuevoLocal.cs">
+    <Compile Include="frmNuevoLocal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NuevoLocal.Designer.cs">
-      <DependentUpon>NuevoLocal.cs</DependentUpon>
+    <Compile Include="frmNuevoLocal.Designer.cs">
+      <DependentUpon>frmNuevoLocal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevoGlobal.resx">
-      <DependentUpon>NuevoGlobal.cs</DependentUpon>
+    <EmbeddedResource Include="frmNuevoGlobal.resx">
+      <DependentUpon>frmNuevoGlobal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NuevoLocal.resx">
-      <DependentUpon>NuevoLocal.cs</DependentUpon>
+    <EmbeddedResource Include="frmNuevoLocal.resx">
+      <DependentUpon>frmNuevoLocal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +94,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libreria de Clases\Libreria de Clases.csproj">
+      <Project>{63f6c7f3-8b28-4a86-94ef-1f639e68c2dc}</Project>
+      <Name>Libreria de Clases</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

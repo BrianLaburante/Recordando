@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AplicacionParaOrganizarme
 {
-    public partial class NuevoGlobal : Form
+    public partial class FrmNuevoGlobal : Form
     {
-        public NuevoGlobal(frmPrincipal nuevo)
+        public FrmNuevoGlobal(frmPrincipal nuevo)
         {
             InitializeComponent();
             this.principal = nuevo; 
@@ -22,7 +22,6 @@ namespace AplicacionParaOrganizarme
         //definicion de objetos
         private string agregado;
         private frmPrincipal principal;
-
         //funciones de encapsulamiento y otras de uso comun
         public string Agregado
         {
@@ -46,7 +45,6 @@ namespace AplicacionParaOrganizarme
         {
            
         }
-
         private void BtnNuevoGlobal_Click(object sender, EventArgs e)
         {
             this.SeleccionarGlobal();

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Libreria_de_Clases;
 
 namespace AplicacionParaOrganizarme
 {
@@ -21,7 +22,7 @@ namespace AplicacionParaOrganizarme
 
         private Form formularioGlobal;
         private Form FormularioLocal; 
-        private List<string> ListaGlobal;
+        private List<ClsGlobal> ListaGlobal;
         private List<CheckedListBox> ListaPaso;
         private string global;
         private string paso;
@@ -32,6 +33,7 @@ namespace AplicacionParaOrganizarme
             modificar,
             eliminar
         }
+          
 
         //Metodos de encapsulacion y funciones del programa
 
@@ -52,7 +54,7 @@ namespace AplicacionParaOrganizarme
                 case TipoDeCambio.insertar: 
                     if (!string.IsNullOrWhiteSpace(Global))
                     {
-                        ListaGlobal.Add(Global);
+                        ListaGlobal.Add(new ClsGlobal(Global));
                         HuboCambio = true;
                         this.CargarLbGlobal(ListaGlobal);
                         Global = string.Empty;
@@ -69,14 +71,14 @@ namespace AplicacionParaOrganizarme
                 default : throw new Exception("no se creo unas acciones para este Tipo de Cambio"); 
             }
         }
-        private void CargarLbGlobal(List<string> Objetos)
+        private void CargarLbGlobal(List<ClsGlobal> Objetos)
         {
             if (HuboCambio)
             {
                 lbGlobal.Items.Clear();
-                foreach (string temp in Objetos)
+                foreach (ClsGlobal temp in Objetos)
                 {
-                    lbGlobal.Items.Add(temp);
+                    lbGlobal.Items.Add(item: temp.NombreGlobal);
                 }
             }
         }
@@ -86,10 +88,10 @@ namespace AplicacionParaOrganizarme
         {
             this.Global = string.Empty;
             this.Paso = string.Empty;
-            ListaGlobal = new List<string>();
+            ListaGlobal = new List<ClsGlobal>();
             ListaPaso = new List<CheckedListBox>();
-            formularioGlobal = new NuevoGlobal(this);
-            FormularioLocal = new NuevoLocal(Paso);
+            formularioGlobal = new FrmNuevoGlobal(this);
+            FormularioLocal = new frmNuevoLocal(Paso);
         }
         private void BtnNuevoGlobal_Click(object sender, EventArgs e)
         {
@@ -98,8 +100,12 @@ namespace AplicacionParaOrganizarme
         }
         private void LbGlobal_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
+        private void BtnAgregarPaso_Click(object sender, EventArgs e)
+        {
+            FormularioLocal.ShowDialog(); 
+    
+        }
     }
 }

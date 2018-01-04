@@ -1,6 +1,6 @@
 ﻿namespace AplicacionParaOrganizarme
 {
-    partial class NuevoGlobal
+    partial class FrmNuevoGlobal
     {
         /// <summary>
         /// Required designer variable.

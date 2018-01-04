@@ -1,6 +1,6 @@
 ﻿namespace AplicacionParaOrganizarme
 {
-    partial class NuevoLocal
+    partial class frmNuevoLocal
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.btFinalizar.BackColor = System.Drawing.Color.DarkRed;
             this.btFinalizar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btFinalizar.Font = new System.Drawing.Font("Replica Pro Bold Italic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btFinalizar.ForeColor = System.Drawing.Color.Black;
             this.btFinalizar.Location = new System.Drawing.Point(11, 196);
             this.btFinalizar.Name = "btFinalizar";
@@ -55,7 +55,7 @@
             this.btnSiguiente.BackColor = System.Drawing.Color.DarkRed;
             this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Replica Pro Bold Italic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.ForeColor = System.Drawing.Color.Black;
             this.btnSiguiente.Location = new System.Drawing.Point(11, 140);
             this.btnSiguiente.Name = "btnSiguiente";
@@ -63,13 +63,14 @@
             this.btnSiguiente.TabIndex = 11;
             this.btnSiguiente.Text = "Agregar Otro";
             this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // tbNuevoLocal
             // 
-            this.tbNuevoLocal.Font = new System.Drawing.Font("Replica Pro Bold Italic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNuevoLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNuevoLocal.Location = new System.Drawing.Point(12, 101);
             this.tbNuevoLocal.Name = "tbNuevoLocal";
-            this.tbNuevoLocal.Size = new System.Drawing.Size(236, 33);
+            this.tbNuevoLocal.Size = new System.Drawing.Size(236, 31);
             this.tbNuevoLocal.TabIndex = 10;
             // 
             // lblTitulo
